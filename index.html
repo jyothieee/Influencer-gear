@@ -6,45 +6,300 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Influencer gear</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/1aa363edc9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,400&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
     <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
         nav {
             display: flex;
+            text-decoration: none;
+            color: black;
+            font-size: 1em;
+            margin-right: 5px;
+            padding: 10px;
             justify-content: space-between;
         }
 
         nav a {
             text-decoration: none;
-            color: black;
-            font-size: 1em;
-            margin-right: 30px;
-            display: inline-block;
+            color: blue;
+            font-size: 1.5em;
+            margin-right: 20px;
+            margin-left: 10px;
+            display: flex;
             justify-content: space-between;
+            text-align: center;
+            text-decoration-style: initial;
         }
+
+        .Influencer {
+            display: center;
+            justify-content: space-between;
+            margin-right: auto;
+            margin: 5px;
+            padding: auto;
+            width: 100%;
+            height: 80%;
+            border-radius: 15px;
+        }
+
+        .Influencer img {
+            width: 400px;
+            height: 250px;
+        }
+
+        .link-button {
+            text-decoration: none;
+            background-color: deeppink;
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-image: iinear linear-gradient(rgb(218, 29, 170));
+            color: white;
+            font-weight: 700;
+
+        }
+
+        .fa fa-star checked {
+            color: orangered;
+        }
+
+        .flex-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: auto;
+        }
+
+        main {
+            display: flex;
+        }
+
+        .collection img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .collection {
+            align-items: center;
+            justify-content: space-between;
+            font-size: smaller;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 300;
+
+        }
+
+        .join-button {
+            text-decoration: none;
+            background-color: deeppink;
+            padding: 5px 5px;
+            border-collapse: 10px;
+            background-image: iinear linear-gradient(rgb(218, 29, 170));
+            color: white;
+            font-weight: 700;
+        }
+
+        .marketing img p h1 {
+            display: flex;
+            padding: 4.5em;
+            align-item: center;
+            width: 15%;
+            height: 10%;
+            padding-bottom: 0em;
+        }
+
+        footer {
+            background: rgb(73, 73, 151);
+            height: auto;
+            width: 100vw;
+            font-family: "opens sans";
+            padding-top: 40px;
+            color: white;
+            text-align: center;
+        }
+
+        .footer-content h3 {
+            font-size: 1.8 rem;
+            font-weight: 400;
+            text-transform: capitalize;
+            line-height: 2 rem;
+        }
+
+        /*Extra small devices (phones, 500px and down) @media only screen and (max-width: 550px) */
+            {
+            body {
+                background-color: yellow;
+            }
+
+            /* Small devices (portrait tablets and large phones, 600px and up) */
+            @media only screen and (min-width: 600px) {
+                body {
+                    background-color: green;
+                }
+
+
+                /* Large devices (laptops/desktops, 992px and up) */
+                @media only screen and (min-width: 992px) {
+                    body {
+                        background-color: red;
+                    }
     </style>
 </head>
 
-<nav>
-    <p>Influencer Product</p>
-    <span>
-        <a href="">Home</a>
-        <a href="">Products</a>
-        <a href="">Sign up</a>
-        <a href="">log in</a>
-    </span>
-    <span>
-        <a href=""><i class="fas fa-search-location"></i></a>
-        <a href=""><i class="fas fa-shopping-cart"></i></a>
-    </span>
-
-</nav>
-
-
 <body>
-    <h1>Start your journey as Influencer</h1>
-    <p> An Influencer is someone in your niche or industry with sway over your target audience.Influencers have
-        specialized knowledge,authority or insight into a specific subject.Their pre-existing presence in a niche makes
-        them a useful lauching pad for brands in search of credibility. </p>
-</body>
+    <p>Influencer Product</p>
+    <header>
+
+        <nav>
+            <span>
+                <a href="">Home</a>
+                <a href="">Products</a>
+                <a href="">Sign up</a>
+                <a href="">log in</a>
+            </span>
+            <span>
+                <a href=""><i class="fas fa-search-location"></i></a>
+                <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </span>
+
+        </nav>
+
+    </header>
+
+    <body>
+        <h1>Start your journey as Influencer</h1>
+
+        <section class="Influencer">
+            <p> An Influencer is someone in your niche or industry with sway over your target audience.<br>
+                Influencers have specialized knowledge,authority or insight into a specific subject.<br>Their
+                pre-existing
+                presence in a niche makes them a useful lauching pad for brands in search of credibility. </p>
+
+        </section>
+
+        <div>
+            <a class="link-button" target="_blank" href="https://www.influencer.com/"> prebook now</a>
+            <img src="influencer-gear-main/influencer-gear-main/images/main-camera.png" alt="">
+        </div>
+        <h2>popular collection</h2>
+        <div class="flex-container">
+
+            <div class="collection">
+                <img src="influencer-gear-main/influencer-gear-main/images/tripod.png" alt="">
+                <h3>Flex tripod</h3>
+                <h4>$50.48</h4>
+                <p>Worldwide shifting available.<br>
+                    buyers protection possible</p>
+                <span><i class="fas fa-star"><i class="fas fa-star"></i></i></span><i class="fas fa-star"></i><i
+                    class="fas fa-star"></i><i class="fas fa-star"></i> 4.99
+            </div>
+            <div class="collection">
+                <img src="influencer-gear-main/influencer-gear-main/images/mic.png">
+                <h3>Microphone</h3>
+                <h4>$120.25</h4>
+                <p>Worldwide shifting available.<br>
+                    buyers protection possible</p>
+                <span><i class="fas fa-star"><i class="fas fa-star"></i></i></span><i class="fas fa-star"></i><i
+                    class="fas fa-star"></i><i class="fas fa-star"></i> 4.99
+            </div>
+            <div class="collection">
+                <img src="influencer-gear-main/influencer-gear-main/images/airpod.png">
+                <h3>Airbuds</h3>
+                <h4>$100.00</h4>
+                <p>Worldwide shifting available.<br>
+                    buyers protection possible</p>
+                <span><i class="fas fa-star"><i class="fas fa-star"></i></i></span><i class="fas fa-star"></i><i
+                    class="fas fa-star"></i><i class="fas fa-star"></i> 4.99
+            </div>
+            <div class="collection">
+                <img src="influencer-gear-main/influencer-gear-main/images/drone.png">
+                <h3>Drone</h3>
+                <h4>$980.25</h4>
+                <p>Worldwide shifting available.<br>
+                    buyers protection possible</p>
+                <span><i class="fas fa-star"><i class="fas fa-star"></i></i></span><i class="fas fa-star"></i><i
+                    class="fas fa-star"></i><i class="fas fa-star"></i> 4.99
+            </div>
+            <div class="collection">
+                <img src="influencer-gear-main/influencer-gear-main/images/lights.png">
+                <h3>Light set up</h3>
+                <h4>$1200.00</h4>
+                <p>Worldwide shifting available.<br>
+                    buyers protection possible</p>
+                <span><i class="fas fa-star"><i class="fas fa-star"></i></i></span><i class="fas fa-star"></i><i
+                    class="fas fa-star"></i><i class="fas fa-star"></i> 4.99
+            </div>
+            <div class="collection">
+                <img src="influencer-gear-main/influencer-gear-main/images/setup.png">
+                <h3>photoshoot set</h3>
+                <h4>$820.40</h4>
+                <p>Worldwide shifting available.<br>
+                    buyers protection possible</p>
+                <span><i class="fas fa-star"><i class="fas fa-star"></i></i></span><i class="fas fa-star"></i><i
+                    class="fas fa-star"></i><i class="fas fa-star"></i> 4.99
+            </div>
+            <div class="collection">
+
+                <img src="influencer-gear-main/influencer-gear-main/images/single-light.png">
+                <h3>Green screen</h3>
+                <h4>$25.48</h4>
+                <p>Worldwide shifting available.<br>
+                    buyers protection possible</p>
+                <span><i class="fas fa-star"><i class="fas fa-star"></i></i></span><i class="fas fa-star"></i><i
+                    class="fas fa-star"></i><i class="fas fa-star"></i> 4.99
+            </div>
+            <div class="collection">
+                <img src="influencer-gear-main/influencer-gear-main/images/action.png">
+                <h3>action camera</h3>
+                <h4>$380.00</h4>
+                <p>Worldwide shifting available.<br>
+                    buyers protection possible</p>
+                <span><i class="fas fa-star"><i class="fas fa-star"></i></i></span><i class="fas fa-star"></i><i
+                    class="fas fa-star"></i><i class="fas fa-star"></i> 4.99
+            </div>
+
+        </div>
+        </section>
+        <section>
+            <div class="marketing">
+                <h2>Influencer marketing</h2>
+
+                <p>Grow an authentic DTC brand with the #1 influencer marketing software platform for creating <br>
+                    genuine
+                    direct relationship with influencers.</p>
+            </div>
+            <div>
+                <a class="join-button" target="_blank" href="https://www.influencer.com/">join now</a>
+                <img src="influencer-gear-main/influencer-gear-main/images/gear.png">
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="footer-content">
+                <h1>Influencer products</h1>
+                <p>All right reserved</p>
+            </div>
+            <div class="footer-button">
+                <p>copyright@2020 influencer product</p>
+            </div>
+            <div class="socials">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-staylinked"></i>
+                <i class="fab fa-youtube-square"></i>
+            </div>
+        </footer>
+    </body>
 
 </html>
